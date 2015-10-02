@@ -1,6 +1,6 @@
 var nicksflix = angular.module('nicksflix', ['ui.router']);
 
-nicksflix.config(function(stateProvider, $urlRouteProvider) {
+nicksflix.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
     url: '',
     views: {
@@ -9,7 +9,7 @@ nicksflix.config(function(stateProvider, $urlRouteProvider) {
       },
       'body': {
         templateUrl: 'partials/home.html',
-        controller: 'ReviewController'
+        controller: 'ReviewCtrl'
       }
     }
   });
