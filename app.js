@@ -20,7 +20,8 @@ nicksflix.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'partials/header.html',
       },
       'body': {
-        templateUrl: 'partials/home.html'
+        templateUrl: 'partials/home.html',
+        controller: 'ReviewsCtrl'
       }
     }
   });

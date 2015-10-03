@@ -1,10 +1,8 @@
 <div class="row">
   <div class="col-md-4">
-    <ul>
-      <li><a>Holy Lord, Shawshank Redemption is a Good Movie</a></li>
-      <li><a>Explosions, Robots, and Snores, On My</a></li>
-      <li><a>Another Review Title Goes Here, Maybe A Couple Words</a></li>
-    </ul>
+    <div ng-repeat="review in reviews">
+      <a href="#">{{ review.title }}</a>
+    </div>
   </div>
   <div class="col-md-8 review">
     <h2 class="text-center">Review Title</h2>
