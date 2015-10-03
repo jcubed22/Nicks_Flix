@@ -1,9 +1,11 @@
 hr {
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  width: 98%;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
-p {
-  word-wrap: break-word; 
+.review {
+  transform: translateY(-20px);
+  padding: 0px 50px;
 }
