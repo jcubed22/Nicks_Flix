@@ -5,22 +5,12 @@ hr {
   clear: both;
 }
 
-.review {
-  transform: translateY(-20px);
-  padding: 0px 50px;
-}
-
 textarea {
   resize: none;
 }
 
 input {
   font-weight: bold;
-}
-
-.night-mode {
-  background-color: black;
-  -webkit-filter: invert(100%);
 }
 
 .alignleft {
@@ -30,4 +20,14 @@ input {
 .alignright {
   float: right;
   transform: translateY(60px);
+}
+
+.night-mode {
+  background-color: black;
+  -webkit-filter: invert(100%);
+}
+
+.review {
+  transform: translateY(-20px);
+  padding: 0px 50px;
 }
