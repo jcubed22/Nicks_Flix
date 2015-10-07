@@ -25,4 +25,17 @@ nicksflix.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
+
+  $stateProvider.state('home.review', {
+    url: '/:reviewId',
+      views: {
+        'header': {
+          templateUrl: 'partials/header.html',
+        },
+        'body': {
+          templateUrl: 'partials/home.review.html',
+          controller: 'ReviewFindCtrl'
+        }
+      }
+  });
 });
