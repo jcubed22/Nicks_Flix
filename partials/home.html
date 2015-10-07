@@ -1,14 +1,16 @@
 <div class="col-md-4">
+  <!-- List of review titles that serve as links to show full review text -->
   <div ng-repeat="review in reviews">
     <a ui-sref="home.review({reviewId: review.id})">{{ review.title }}</a>
   </div>
 </div>
 <div class="col-md-8 review">
   <div class="row">
+    <!-- View for reading individual reviews. -->
     <div ui-view="body"></div>
   </div>
   <div class="row">
-    <div class="review">
+    <div>
       <h2 class="text-center">Create a new review</h2>
       <form ng-submit="ReviewsFactory.addReview()" id="submit" role="form">
         <div class="form-group">
@@ -17,7 +19,7 @@
         <div class="form-group">
           <textarea rows="4" cols="50" ng-model="ReviewsFactory.reviewBody" class="form-control" placeholder="Enter the body of your review here"></textarea>
         </div>
-        <button type="submit" class="btn-lg">Submit review</button>
+        <button type="submit" class="btn-lg pull-right">Submit review</button>
       </form>
     </div>
   </div>

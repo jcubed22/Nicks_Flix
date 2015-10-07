@@ -2,6 +2,7 @@ hr {
   height: 12px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  clear: both;
 }
 
 .review {
@@ -15,4 +16,18 @@ textarea {
 
 input {
   font-weight: bold;
+}
+
+.night-mode {
+  background-color: black;
+  -webkit-filter: invert(100%);
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+  transform: translateY(60px);
 }
