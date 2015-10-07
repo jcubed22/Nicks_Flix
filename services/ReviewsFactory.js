@@ -7,5 +7,12 @@ nicksflix.factory('ReviewsFactory', function ReviewsFactory() {
     { title: "Nice tuxedo.  Nice tuxedo to DIE IN!", body: "If you haven't watched 'Six-String Samurai', you owe it to yourself to do so.  It's a really good low-budget cult favorite, perfect for being shared with a group of friends.  Campy and ridiculous?  Absolutely.  But damn if it isn't entertaining, and chock full of quotes that are absolute gems.", id: 4 }
   ];
 
+  // Convention for reviewBody?
+  factory.addReview = function() {
+    factory.reviews.push({ title: factory.reviewTitle, body: factory.reviewBody, id: factory.reviews.length + 1});
+    factory.reviewTitle = null;
+    factory.reviewBody = null;
+  };
+
   return factory;
 });
